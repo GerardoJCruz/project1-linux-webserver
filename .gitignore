@@ -1,0 +1,8 @@
+project1-linux-webserver-almalinux-starter.zip
+project1-linux-webserver.pem
+.DS_Store
+*.log
+*.tar.gz
+*.zip
+screenshots/
+
