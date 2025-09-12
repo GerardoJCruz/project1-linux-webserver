@@ -1,25 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>It works! AlmaLinux + Nginx on EC2</title>
-    <style>
-      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 3rem; }
-      .card { max-width: 720px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 14px; padding: 2rem; }
-      h1 { margin-top: 0; }
-      code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>It works! Amazon Linux + Nginx on EC2</h1>
-      <p>You are serving a static page from <code>/var/www/portfolio/html</code> via Nginx.</p>
-      <ul>
-        <li>OS: Amazon Linux 2023</li>
-        <li>Web: Nginx</li>
-        <li>Deployed: via <code>scp</code> and <code>rsync</code></li>
-      </ul>
-    </div>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.min.css">
+</head>
+
+<body>
+    <header class="site-header py-3">
+        <div class="container-xl">
+            <div class="logo">
+                <img src="build/img/logo.svg" alt="Logo Podcast App">
+            </div>
+
+            <div class="content">
+                <h1 class="text-center text-md-start text-white">Your platform to publish your podcast.</h1>
+
+                <a href="#" class="btn btn-header">Create an account.</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-xl py-4 create-podcast">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="build/img/image_podcast.svg" alt="Image Podcast" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 class="">It is time to create your podcast</h2>
+                <p class="mt-1">
+                    We will distribute it to the most populated platforms like Google Podcast, Spotify, Apple Podcast
+                    and Youtube.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary py-3 benefits">
+        <div class="container-xl">
+            <div class="row align-items-center">
+                <div class="col-md-7 ">
+                    <h2 class="">Connect with people and earn money</h2>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus
+                        voluptatibus cumque eveniet a? Doloremque ea corrupti ipsam molestiae nam, architecto non libero
+                        assumenda, obcaecati quia accusantium quaerat, sed praesentium?</p>
+                </div>
+                <div class="col-md-4 offset-md-1">
+                    <img src="build/img/podcast_cover.png" alt="Podcast Cover" class="img-fluid image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics container-xl py-4">
+        <h2>Detailed statistics</h2>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel asperiores molestias</p>
+        <img src="/build/img/graph.svg" alt="Graph Image" class="mt-2 img-fluid">
+    </section>
+
+    <main class="plans py-4 bg-secondary">
+        <div class="container-xl">
+            <h2 class="mb-1">Plans</h2>
+            <p class="text-white">start free. Extend your plan when necessary.</p>
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-10">
+                    <div class="row our-plans">
+                        <div class="col-md-4 order-md-2 bg-primary plan business">
+                            <h3 class="text-center">Business</h3>
+                            <p class="price text-center fw-bold">$6.99 per Month</p>
+                            <ul class="list-unstyled">
+                                <li class="text-center mb-2">Unlimited episodes</li>
+                                <li class="text-center mb-2">All plattforms</li>
+                                <li class="text-center mb-2">Statistics</li>
+                                <li class="text-center mb-2">App to record</li>
+                                <li class="text-center mb-2">Paid podcast</li>
+                            </ul>
+                            <a href="#" class="btn-plan btn">Sign Up</a>
+                        </div>
+                        <!-- plan ends -->
+                        <div class="col-md-4 order-md-1 bg-white plan basic">
+                            <h3 class="text-center">Basic</h3>
+                            <p class="price text-center fw-bold">$2.99 per Month</p>
+                            <ul class="list-unstyled">
+                                <li class="text-center mb-2">30 Episodes</li>
+                                <li class="text-center mb-2">Statistics</li>
+                                <li class="text-center mb-2">App to record</li>
+                            </ul>
+                            <a href="#" class="btn-plan btn">Sign Up</a>
+                        </div>
+                        <!-- plan ends -->
+                        <div class="col-md-4 order-3 bg-white plan pro">
+                            <h3 class="text-center">PRO</h3>
+                            <p class="price text-center fw-bold">$4.99 per Month</p>
+                            <ul class="list-unstyled">
+                                <li class="text-center mb-2">50 Episodes</li>
+                                <li class="text-center mb-2">All plattforms</li>
+                                <li class="text-center mb-2">Statistics</li>
+                                <li class="text-center mb-2">App to record</li>
+                            </ul>
+                            <a href="#" class="btn-plan btn">Sign Up</a>
+                        </div>
+                        <!-- plan ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-xl py-4 testimonials">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="build/img/app.jpg" alt="Image App" class="img-fluid w-75 d-block mx-auto">
+            </div>
+            <div class="col-md-8 ">
+                <h2>Testimonials</h2>
+
+                <div class="row mt-3">
+                    <div class="col-md-6 offset-md-2 mb-2">
+                        <div class="testimonial bg-primary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam repudiandae id aliquam qui corrup
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-4 mb-2">
+                        <div class="testimonial bg-primary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam repudiandae id aliquam qui corrup
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-6 mb-2">
+                        <div class="testimonial bg-primary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam repudiandae id aliquam qui corrup
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__row">
+                <div class="footer__widget">
+                    <img src="build/img/logo.svg" alt="Image Logo" class="footer__logo">
+                </div>
+                <div class="footer__widget">
+                    <h3 class="footer__heading">Solutions</h3>
+                    <nav class="footer__nav">
+                        
+                        <a href="#" class="footer__link">Solutions</a>
+                        <a href="#" class="footer__link">Graphics</a>
+                        <a href="#" class="footer__link">Distribution</a>
+                    </nav>
+                </div>
+                <div class="footer__widget">
+                    <h3 class="footer__heading">Support</h3>
+                    <nav class="footer__nav">
+                        
+                        <a href="#" class="footer__link">Documentation</a>
+                        <a href="#" class="footer__link">Prices</a>
+                        <a href="#" class="footer__link">API</a>
+                    </nav>
+                </div>
+                <div class="footer__widget">
+                    <h3 class="footer__heading">Podcast FM</h3>
+                    <nav class="footer__nav">
+                        
+                        <a href="#" class="footer__link">About</a>
+                        <a href="#" class="footer__link">Vlog</a>
+                        <a href="#" class="footer__link">Clients</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copyright">Podcast FM - All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
