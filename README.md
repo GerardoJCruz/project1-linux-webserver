@@ -1,6 +1,5 @@
 # Project 1 – Linux Web Server (EC2 Amazon Linux + Nginx)
 This project serves a static website on an EC2 instance, with the configuration and file share made from a local machine through an SSH link. 
-Structure:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
